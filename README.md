@@ -148,7 +148,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/orders
 ```
 
-## GENERATE REVENUE
+### GENERATE REVENUE
 
 **ENDPOINT URL** : **`/api/orders/revenue`**
 **METHOD** : `GET`
@@ -160,7 +160,7 @@ This is a complete backend project based on typescript, mongoose, express js and
 ```
 
 
-## TECHNOLOGY used
+## TECHNOLOGY 
 
 - Typescript
 - Mongoose
