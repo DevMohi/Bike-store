@@ -4,7 +4,7 @@
 
 - [Bike Store] (https://bike-shop-assingment.vercel.app/)
 
-### Overview
+## Overview
 
 This is a complete backend project based on typescript, mongoose, express js and mongodb. supports CRUD operations with data validation. It follows a modular pattern with two modules: Bike (manages product CRUD operations) and Order (handles order creation, stock checks if there is insufficient, and revenue calculation).
 
@@ -67,7 +67,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/products
 ```
 
-#### GET ALL BIKES
+### GET ALL BIKES
 
 **ENDPOINT URL** : **`/api/products`**
 **METHOD** : `GET`
@@ -84,7 +84,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/products?searchTerm=Mountain
 ```
 
-#### GET A SPECIFIC BIKE BY ID
+### GET A SPECIFIC BIKE BY ID
 
 **ENDPOINT URL** : **`/api/products/:productId`**
 **METHOD** : `GET`
@@ -95,7 +95,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/products/67559a962fac1233405aeb7c
 ```
 
-#### Update Bike using ID
+### Update Bike using ID
 
 **ENDPOINT URL** : **`/api/products/:productId`**
 **METHOD** : `PUT`
@@ -115,7 +115,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/products/67559a962fac1233405aeb7c
 ```
 
-#### Delete a Bike using ID
+### Delete a Bike using ID
 
 **ENDPOINT URL** : **`/api/products/:productId`**
 **METHOD** : `DELETE`
@@ -126,7 +126,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/products/675db0fc0d63d5f8e4b308a5
 ```
 
-#### Order a Bike
+### Order a Bike
 
 **ENDPOINT URL** : **`/api/orders`**
 **METHOD** : `POST`
@@ -148,7 +148,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/orders
 ```
 
-##### GENERATE REVENUE
+### GENERATE REVENUE
 
 **ENDPOINT URL** : **`/api/orders/revenue`**
 **METHOD** : `GET`
@@ -160,7 +160,7 @@ This is a complete backend project based on typescript, mongoose, express js and
 ```
 
 
-### TECHNOLOGY used
+## TECHNOLOGY used
 
 - Typescript
 - Mongoose
@@ -169,7 +169,7 @@ This is a complete backend project based on typescript, mongoose, express js and
 - Postman
 - Vercel (for deployment)
 
-### Important Features
+## Important Features
 
 - CRUD Operations - For Bikes
 - Order Managing - Create order for bikes and calculate revenue using aggregation.
