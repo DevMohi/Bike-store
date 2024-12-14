@@ -40,7 +40,7 @@ This is a complete backend project based on typescript, mongoose, express js and
   npm run dev
   ```
 
-## API Testing with Postman
+# API Testing with Postman
 
 - As this is a backend-focused project, Postman is utilized for testing and performing API operations efficiently.
 
