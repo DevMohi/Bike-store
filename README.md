@@ -39,32 +39,14 @@ This is a complete backend project based on typescript, mongoose, express js and
   npm run dev
   ```
 
-### TECHNOLOGY used
-
-- Typescript
-- Mongoose
-- MongoDB
-- Express.js
-- Postman
-- Vercel (for deployment)
-
-### Important Features
-
-- CRUD Operations - For Bikes
-- Order Managing - Create order for bikes and calculate revenue using aggregation.
-- Modular Pattern - Improves code organization and reusability.
-- Data validation - Ensures error-free database entries with Mongoose schema validation.
-- Type Protection: Enforced using TypeScript.
-
 ### API Testing with Postman
 
 - As this is a backend-focused project, Postman is utilized for testing and performing API operations efficiently.
 
-#### CREATE A BIKE
+### CREATE A BIKE
 
 **ENDPOINT URL** : **`/api/products`**
 **METHOD** : `POST`
-**Body Data**:
 
 ```json
 {
@@ -159,7 +141,7 @@ This is a complete backend project based on typescript, mongoose, express js and
 }
 ```
 
-- The totalPrice field is optional. It is calculated by referencing the Bike database, it multiplies the price of a single product with the quantity. Users may choose to provide the totalPrice value manually, or the system will compute it automatically. 
+- The totalPrice field is optional. It is calculated by referencing the Bike database, it multiplies the price of a single product with the quantity. Users may choose to provide the totalPrice value manually, or the system will compute it automatically.
 
 ```bash
     https://bike-shop-assingment.vercel.app/api/orders
@@ -170,8 +152,26 @@ This is a complete backend project based on typescript, mongoose, express js and
 **ENDPOINT URL** : **`/api/orders/revenue`**
 **METHOD** : `GET`
 
-- Hit this link to get the total revenue based on all orders 
+- Hit this link to get the total revenue based on all orders
 
 ```bash
     https://bike-shop-assingment.vercel.app/api/orders/revenue
 ```
+
+
+### TECHNOLOGY used
+
+- Typescript
+- Mongoose
+- MongoDB
+- Express.js
+- Postman
+- Vercel (for deployment)
+
+### Important Features
+
+- CRUD Operations - For Bikes
+- Order Managing - Create order for bikes and calculate revenue using aggregation.
+- Modular Pattern - Improves code organization and reusability.
+- Data validation - Ensures error-free database entries with Mongoose schema validation.
+- Type Protection: Enforced using TypeScript.
