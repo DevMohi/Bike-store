@@ -43,7 +43,7 @@ This is a complete backend project based on typescript, mongoose, express js and
 
 - As this is a backend-focused project, Postman is utilized for testing and performing API operations efficiently.
 
-### CREATE A BIKE
+#### CREATE A BIKE
 
 **ENDPOINT URL** : **`/api/products`**
 **METHOD** : `POST`
@@ -66,7 +66,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/products
 ```
 
-### GET ALL BIKES
+#### GET ALL BIKES
 
 **ENDPOINT URL** : **`/api/products`**
 **METHOD** : `GET`
@@ -83,7 +83,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/products?searchTerm=Mountain
 ```
 
-### GET A SPECIFIC BIKE BY ID
+#### GET A SPECIFIC BIKE BY ID
 
 **ENDPOINT URL** : **`/api/products/:productId`**
 **METHOD** : `GET`
@@ -94,7 +94,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/products/67559a962fac1233405aeb7c
 ```
 
-### Update Bike using ID
+#### Update Bike using ID
 
 **ENDPOINT URL** : **`/api/products/:productId`**
 **METHOD** : `PUT`
@@ -114,7 +114,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/products/67559a962fac1233405aeb7c
 ```
 
-### Delete a Bike using ID
+#### Delete a Bike using ID
 
 **ENDPOINT URL** : **`/api/products/:productId`**
 **METHOD** : `DELETE`
@@ -125,7 +125,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/products/675db0fc0d63d5f8e4b308a5
 ```
 
-### Order a Bike
+#### Order a Bike
 
 **ENDPOINT URL** : **`/api/orders`**
 **METHOD** : `POST`
@@ -147,7 +147,7 @@ This is a complete backend project based on typescript, mongoose, express js and
     https://bike-shop-assingment.vercel.app/api/orders
 ```
 
-#### GENERATE REVENUE
+##### GENERATE REVENUE
 
 **ENDPOINT URL** : **`/api/orders/revenue`**
 **METHOD** : `GET`
