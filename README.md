@@ -38,9 +38,9 @@ This is a complete backend project based on typescript, mongoose, express js and
 
 # API Testing with Postman
 
-- As this is a backend-focused project, Postman is utilized for testing and performing API operations efficiently.
+As this is a backend-focused project, Postman is utilized for testing and performing API operations efficiently.
 
-###### Live Link : - [Bike Store] (https://bike-shop-assingment.vercel.app/)
+###### Live Link : - (https://bike-shop-assingment.vercel.app/)
 
 ### CREATE A BIKE
 
