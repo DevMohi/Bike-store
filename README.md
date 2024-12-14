@@ -14,13 +14,14 @@ This is a complete backend project based on typescript, mongoose, express js and
 
 ### Installation Steps
 
-- Clone the Repository
+- Clone the Repository and change the directory 
 
   ```bash
   https://github.com/DevMohi/Bike-store-.git
+  cd book-shop-api
   ```
 
-- Run This Command
+- Run This Command to install all the packages 
 
   ```bash
   npm install
@@ -39,7 +40,7 @@ This is a complete backend project based on typescript, mongoose, express js and
   npm run dev
   ```
 
-### API Testing with Postman
+## API Testing with Postman
 
 - As this is a backend-focused project, Postman is utilized for testing and performing API operations efficiently.
 
