@@ -4,15 +4,15 @@
 
 - [Bike Store] (https://bike-shop-assingment.vercel.app/)
 
-## Overview
+# Overview
 
 This is a complete backend project based on typescript, mongoose, express js and mongodb. supports CRUD operations with data validation. It follows a modular pattern with two modules: Bike (manages product CRUD operations) and Order (handles order creation, stock checks if there is insufficient, and revenue calculation).
 
-### Video Demonstration :
+## Video Demonstration :
 
 - [Video Demonstration] (URL)
 
-### Installation Steps
+## Installation Steps
 
 - Clone the Repository and change the directory 
 
@@ -107,7 +107,7 @@ This is a complete backend project based on typescript, mongoose, express js and
 }
 ```
 
-- In order to update a product, you need a specific id (here the id given is a demo) , same as the above example.
+- In order to update a product, you need a specific id (here the id given is a demo) , you can use the json data above to update the bike information.
 
 - Hit this link
 
