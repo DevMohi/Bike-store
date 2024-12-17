@@ -6,7 +6,7 @@ This is a complete backend project based on typescript, mongoose, express js and
 
 ## Video Demonstration :
 
-- [Video Demonstration] (https://www.canva.com/design/DAGZgK0QgY4/26GdLgVi7kkPdGXxGpaTzQ/edit)
+- [Video Demonstration] (https://drive.google.com/file/d/1b0_pB9lKmZ0Df25uJDlUlRYFq48IODqA/view?usp=sharing)
 
 ## Installation Steps
 
