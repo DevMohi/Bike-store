@@ -1,13 +1,12 @@
-//Req and response manage
-
 import { Request, Response } from "express";
 import { bikeService } from "./bike.service";
 
-//Create a Bike => Done
+//Create bike
 const createBike = async (req: Request, res: Response) => {
   try {
     const payload = req.body;
     const result = await bikeService.createBike(payload);
+
     res.status(200).json({
       message: "Bike created successfully",
       success: true,
@@ -23,16 +22,23 @@ const createBike = async (req: Request, res: Response) => {
   }
 };
 
-//Get all bikes based on searchTerm -> Done
-const getAllBikes = async (req: Request, res: Response) => {
+//Get all bikes based on searchTerm
+const getBikesByQuery = async (req: Request, res: Response) => {
   try {
     const { searchTerm } = req.query;
-    const result = await bikeService.getAllBikes(searchTerm as string);
+    console.log(searchTerm);
+    let result;
+    if (searchTerm) {
+      result = await bikeService.getBikesByQuery(searchTerm as string);
+    } else {
+      //For /api/products
+      result = await bikeService.getAllBikes();
+    }
 
-    //If not found
+    //If not found searchTerm
     if (result.length === 0) {
       return res.status(404).json({
-        message: "searchterm not found",
+        message: "SearchTerm Not found",
         success: false,
         data: [],
       });
@@ -52,13 +58,13 @@ const getAllBikes = async (req: Request, res: Response) => {
   }
 };
 
-//Get a specific Bike with id -> Done
+//Get a specific Bike with id
 const getSingleBike = async (req: Request, res: Response) => {
   try {
     const { productId } = req.params;
     const result = await bikeService.getSingleBike(productId);
 
-    // No data found
+    // if No data found
     if (!result) {
       return res.status(404).json({
         message: "Bike not found",
@@ -82,7 +88,7 @@ const getSingleBike = async (req: Request, res: Response) => {
   }
 };
 
-//Update a bikev - > Done
+//Update a bike
 const updateBike = async (req: Request, res: Response) => {
   try {
     const { productId } = req.params;
@@ -127,8 +133,8 @@ const deleteBike = async (req: Request, res: Response) => {
       });
     }
     res.status(200).json({
+      message: "Bike deleted successfully",
       status: true,
-      message: "Bike Deleted Successfully",
       data: {},
     });
   } catch (error: any) {
@@ -143,7 +149,7 @@ const deleteBike = async (req: Request, res: Response) => {
 
 export const bikeController = {
   createBike,
-  getAllBikes,
+  getBikesByQuery,
   getSingleBike,
   deleteBike,
   updateBike,

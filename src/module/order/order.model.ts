@@ -20,6 +20,7 @@ const orderSchema = new Schema<IOrder>(
     },
     quantity: {
       type: Number,
+      min: [0, "Quantity must be positive"],
       required: [true, "Quantity required"],
     },
     //Product price * quantity

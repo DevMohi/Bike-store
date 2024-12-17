@@ -31,6 +31,7 @@ const bikeSchema = new Schema<IBike>(
     },
     quantity: {
       type: Number,
+      min: [0, "Quantity must be positive"],
       required: [true, "Quantity is required"],
     },
     inStock: {

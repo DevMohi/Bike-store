@@ -7,6 +7,7 @@ bikeRouter.put("/products/:productId", bikeController.updateBike  as RequestHand
 bikeRouter.delete("/products/:productId", bikeController.deleteBike  as RequestHandler);
 bikeRouter.get("/products/:productId", bikeController.getSingleBike  as RequestHandler);
 bikeRouter.post("/products", bikeController.createBike  as RequestHandler);
-bikeRouter.get("/products", bikeController.getAllBikes  as RequestHandler);
+bikeRouter.get("/products", bikeController.getBikesByQuery  as RequestHandler);
+
 
 export default bikeRouter;

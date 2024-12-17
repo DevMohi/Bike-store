@@ -1,16 +1,21 @@
 import { IBike } from "./bike.interface";
 import Bike from "./bike.model";
 
-//need to define type for payload so define an interface
 const createBike = async (payload: IBike): Promise<IBike> => {
   const result = await Bike.create(payload);
   return result;
 };
 
-const getAllBikes = async (searchTerm: string) => {
+const getAllBikes = async () => {
+  const result = await Bike.find();
+  return result;
+};
+
+const getBikesByQuery = async (searchTerm: string) => {
   let bikeSearch = {};
   if (searchTerm) {
     bikeSearch = {
+      //or operator
       $or: [
         { name: searchTerm },
         { brand: searchTerm },
@@ -27,12 +32,14 @@ const getSingleBike = async (productId: string) => {
   return result;
 };
 
-//Partial shobgula ke optional kore de
 const updateBike = async (productId: string, payload: Partial<IBike>) => {
   if (payload.quantity !== undefined) {
     payload.inStock = payload.quantity > 0;
   }
-  const result = Bike.findByIdAndUpdate(productId, payload, { new: true });
+  const result = Bike.findByIdAndUpdate(productId, payload, {
+    new: true,
+    runValidators: true,
+  });
   return result;
 };
 
@@ -44,6 +51,7 @@ const deleteBike = async (productId: string) => {
 export const bikeService = {
   createBike,
   getAllBikes,
+  getBikesByQuery,
   getSingleBike,
   deleteBike,
   updateBike,

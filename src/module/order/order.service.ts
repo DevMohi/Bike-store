@@ -52,12 +52,7 @@ const calculateRevenue = async () => {
     { $project: { _id: 0, totalRevenue: 1 } },
   ]);
 
-  //If no result is found, returns 0
-  if (result.length === 0) {
-    return 0;
-  } else {
-    return result;
-  }
+  return result;
 };
 export const orderServices = {
   createOrder,

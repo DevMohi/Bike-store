@@ -10,11 +10,10 @@ This is a complete backend project based on typescript, mongoose, express js and
 
 ## Installation Steps
 
-- Clone the Repository and change the directory 
+- Clone the Repository
 
   ```bash
   https://github.com/DevMohi/Bike-store-.git
-  cd book-shop-api
   ```
 
 - Run This Command to install all the packages 

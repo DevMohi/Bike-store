@@ -11,6 +11,12 @@ const createOrder = async (req: Request, res: Response) => {
       data: result,
     });
   } catch (error: any) {
+    if (error.message === "Nothing available with this id") {
+      return res.status(404).json({
+        message: "Not found",
+        success: false,
+      });
+    }
     res.status(400).json({
       message: error.message || "something went wrong",
       success: false,
@@ -22,11 +28,14 @@ const createOrder = async (req: Request, res: Response) => {
 
 const calculateRevenue = async (req: Request, res: Response) => {
   try {
-    const result = await orderServices.calculateRevenue();
+    const result: any = await orderServices.calculateRevenue();
+    const totalRevenue = result[0]?.totalRevenue || 0;
     res.status(200).json({
-      message: "Order created successfully",
+      message: "Revenue calculated successfully",
       status: true,
-      data: result,
+      data: {
+        totalRevenue,
+      },
     });
   } catch (error: any) {
     res.status(500).json({
